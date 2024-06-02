@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Enrollment Form</h2>
+        <form id="enrollmentForm">
+            <label for="name">Student's Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+            <label for="course">Course Selection:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="DBMS">DBMS</option>
+                <option value="DSA">DSA</option>
+                <option value="JAVA">JAVA</option>
+                <option value="C++">C++</option>
+                <option value="PYTHON">PYTHON</option>
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
